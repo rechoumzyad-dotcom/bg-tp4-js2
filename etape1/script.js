@@ -1,0 +1,1 @@
+"use strict"; // Mode strict (cours slide 51)

@@ -1,0 +1,44 @@
+/* Conteneur : tableau centré + police Calibri en premier choix (TP slide 10) */
+#table_container {
+  font-family: Calibri, Arial, sans-serif;
+  width: 80%;
+  margin: 30px auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #007bbd;
+  color: white;
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.col_number {
+  text-align: center;
+  width: 60px;
+}
+
+.col_text {
+  text-align: left;
+}
+
+.col_chkbox {
+  text-align: center;
+  width: 70px;
+}
+
+button {
+  margin-top: 5px;
+  cursor: pointer;
+}

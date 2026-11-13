@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD-Persons - Etape 3</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fichier JS externe (cours slide 24 : Méthode 3 = fichier JS) ; "defer" = exécution après chargement du DOM (cours slide 27) -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Conteneur du tableau (id = table_container) : sert à centrer et à fixer la police -->
+    <div id="table_container">
+        <table>
+            <tr>
+                <th>N°</th><th>Nom</th><th>Prénom</th><th>Points</th><th>Select</th>
+            </tr>
+        </table>
+        <!-- Au clic (onclick, cours slide 129) : exécute doInsert (qui utilise le compteur de lignes) -->
+        <button onclick="doInsert('nom', 'prenom', 10)">Ajouter</button>
+        <!-- Au clic (onclick, cours slide 129) : affiche le tableau persons dans la console (cours slide 33) -->
+        <button onclick="consoleTableau()">Console Tableau</button>
+    </div>
+</body>
+</html>
