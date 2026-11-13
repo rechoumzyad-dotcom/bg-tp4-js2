@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD-Persons - Etape 5</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fichier JS externe (cours slide 24 : Méthode 3 = fichier JS) ; "defer" = exécution après chargement du DOM (cours slide 27) -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Conteneur du tableau (id = table_container) : sert à centrer et à fixer la police -->
+    <div id="table_container">
+         <!-- conteneur du formulaire (id = form_container) : copied from (slide 48-tp4) -->
+     <div id="form_container"> 
+         <div class="form_group">
+             <label class="form_label">Nom:</label>
+             <input type="text" id="form_nom" class="form_field"/>
+         </div>
+         <div class="form_group">
+             <label class="form_label">Prénom:</label>
+             <input type="text" id="form_prenom" class="form_field"/>
+         </div>
+         <div class="form_group">
+              <label class="form_label">Points:</label>
+              <input type="number" id="form_points" class="form_field"/>
+         </div>
+         <button onclick="doNewData()">
+              Ajouter
+         </button>
+        </div>
+
+
+        <table>
+            <tr>
+                <th>N°</th><th>Nom</th><th>Prénom</th><th>Points</th><th>Select</th>
+            </tr>
+        </table>
+
+        <!-- Espace résumé (id container_summary) : p1 = nombre de lignes, p3 = total des points -->
+        <div id="container_summary">
+            <p id="p1">0 ligne(s)</p>
+            <p id="p2"></p>
+            <p id="p3">Total point(s)= 0</p>
+        </div>
+       
+        <!-- Au clic (onclick, cours slide 129) : affiche le tableau persons dans la console (cours slide 33) -->
+        <button onclick="consoleTableau()">Console Tableau</button>
+    </div>
+</body>
+</html>
